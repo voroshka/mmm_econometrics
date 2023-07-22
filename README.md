@@ -2,6 +2,15 @@
 
 The following repository contains several scripts for customised Marketin Mix Modelling tool largely based on the Robyn, MMM tool created by Meta. The aim of the tool is to provide tailored solution to evaluate the impact of large TV campaigns and other offline channels. 
 
+**Description of the files and the order os usage:**
+1. preprocessing_pipeline.ipynb (preparation of data before modelling)
+    - preprocessing_dummy__buyers (separate file for dummy variables derivation)
+2. Robyn_weibull.Rmd (model fitting using Robyn library in R)
+3. model_choosing_v3.ipynb (manual choosing of the final model among the best ones according to optimization)
+4. postprocessing_pipeline.ipynb (final preparation of data with visualisation)
+5. transform_matrix.ipynb (response-curves analysis)
+
+
 **Problem context:**
 Big share of the marketing budget is allocated to Media advertising: general advertising as a brand or product, without the specifics of individual ads. Furthermore, approximately 70% of the media budget is allocated to TV advertising. Obviously, conventional campaign analysis methods (such as user-level attribution) won't be suitable. It's necessary to apply the Top-Down method, tracking uplifts in the target metric and decomposing them into the contribution of each channel.
 
